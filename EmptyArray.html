@@ -7,6 +7,12 @@
 </head>
 
 <body>
+    <div>
+        different way to empty an array;<br>
+        1. city.length=0<br>
+        2. arrayname.splice(0, array.length);<br>
+        3. using pop method <br>        
+    </div>
     <p> Array elemnt before</p>
     <p id="element"></p>
     <p> Array elemnt after</p>
@@ -14,9 +20,19 @@
     <script>    
     var city=["indore ","dewas"];
     document.getElementById("element").innerHTML=city;
-    city.length=0;
-    document.getElementById("element1").innerHTML=city;
 
+    // initialize array.length=0;
+   // city.length=0;
+   // document.getElementById("element1").innerHTML=city;
+
+     city.splice(0,city.length);
+     document.getElementById("element1").innerHTML=city;
+
+   /*while(city.length>0)
+   {
+       city.pop();
+   }*/
+   //document.getElementById("element1").innerHTML=city;
     </script>
 </body>
 </html>

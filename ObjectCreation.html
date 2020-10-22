@@ -7,6 +7,9 @@
 </head>
 <body>
     <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
     <script>
         //using single literal
         var person = {
@@ -16,7 +19,6 @@
         };
         document.getElementById("p1").innerHTML="Admin "+person.fname+ " "+ person.lname+ " "+person.add;
 
-<<<<<<< HEAD
         //create function using constructor function
         function Person(first, last, age) {
          this.firstName = first;
@@ -30,7 +32,7 @@
 
         document.getElementById("p3").innerHTML="member 1"+firstperson.firstName+" "+firstperson.lastName+" "+firstperson.age;
         document.getElementById("p4").innerHTML="member 2"+secondperson.firstName+" "+secondperson.lastName+" "+secondperson.age;
-=======
+
         //using new keyword
 
         var address= new Object();
@@ -41,7 +43,7 @@
         document.getElementById("p2").innerHTML=" Address street no."+address.number+
         "street "+address.street+" city "+address.city+"<br>";
 
->>>>>>> tempbranch
+
     </script>
 </body>
 </html>

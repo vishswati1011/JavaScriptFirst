@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+        if (function F(){})
+        {
+        y += Typeof F;</span>
+        }
+        console.log(y);
+
+        //Output: Uncaught SyntaxError: Unexpected identifier   at line 14
+
+
+        /*
+        right code 
+        var Y = 1;
+        if (function F(){})
+        {
+        console.log(typeof (F));
+        Y += typeof (F); // </span>
+        }
+
+        console.log(Y);
+        //output on console :   1undefined 
+        
+        */
+    </script>
+</body>
+</html>

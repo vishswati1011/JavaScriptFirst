@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div><h1>only method in applay and call is that way of passing argument <br>
+    in call we can pass separete argyment<br>
+    in applay() we have to pass Argument as a array list </h1></div>
     <script>/*
       let name={
             firstname :"swati",
@@ -36,6 +39,22 @@
         }
         printfullname.call(name2);*/
 
+      //passing argument with call
+      /*  let name = {
+            firstname: "swati",
+            lastname: "vishwakarma",
+        }
+        let printfullname = function(hometoun,state){
+                console.log(this.firstname+" "+this.lastname +" "+hometoun+ " "+state);
+            }
+        printfullname.call(name,"indore","mp");
+        let name2={
+            firstname:"sachin",
+            lastname:"yadav",
+        }
+        printfullname.call(name2,"mumbai","maharastra");*/
+
+        //using apply method call function
         let name = {
             firstname: "swati",
             lastname: "vishwakarma",
@@ -48,7 +67,8 @@
             firstname:"sachin",
             lastname:"yadav",
         }
-        printfullname.call(name2,"mumbai","maharastra");
+        printfullname.apply(name2,["mumbai","maharastra"])
+        
 
 
 

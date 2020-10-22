@@ -15,6 +15,20 @@
             add:"indore",
         };
         document.getElementById("p1").innerHTML="Admin "+person.fname+ " "+ person.lname+ " "+person.add;
+
+        //create function using constructor function
+        function Person(first, last, age) {
+         this.firstName = first;
+         this.lastName = last;
+         this.age = age;
+         
+        }
+
+        var firstperson=new Person("harsa","sharma",20);
+        var secondperson=new Person("rohit","sharma",21);
+
+        document.getElementById("p3").innerHTML="member 1"+firstperson.firstName+" "+firstperson.lastName+" "+firstperson.age;
+        document.getElementById("p4").innerHTML="member 2"+secondperson.firstName+" "+secondperson.lastName+" "+secondperson.age;
     </script>
 </body>
 </html>

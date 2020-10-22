@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <script>/*
       let name={
             firstname :"swati",
             lastname :"vishwakarma",
@@ -20,7 +20,22 @@
             firstname:"sachin",
             lastname:"yadav",
         }
-        name.printfullname.call(name2);
+        name.printfullname.call(name2);*/
+        
+        let name = {
+            firstname: "swati",
+            lastname: "vishwakarma",
+        }
+        let printfullname = function(){
+                console.log(this.firstname+" "+this.lastname +" ");
+            }
+        printfullname.call(name);
+        let name2={
+            firstname:"sachin",
+            lastname:"yadav",
+        }
+        printfullname.call(name2);
+
 
         
     </script>

@@ -21,8 +21,8 @@
             lastname:"yadav",
         }
         name.printfullname.call(name2);*/
-        
-        let name = {
+
+       /* let name = {
             firstname: "swati",
             lastname: "vishwakarma",
         }
@@ -34,7 +34,22 @@
             firstname:"sachin",
             lastname:"yadav",
         }
-        printfullname.call(name2);
+        printfullname.call(name2);*/
+
+        let name = {
+            firstname: "swati",
+            lastname: "vishwakarma",
+        }
+        let printfullname = function(hometoun,state){
+                console.log(this.firstname+" "+this.lastname +" "+hometoun+ " "+state);
+            }
+        printfullname.call(name,"indore","mp");
+        let name2={
+            firstname:"sachin",
+            lastname:"yadav",
+        }
+        printfullname.call(name2,"mumbai","maharastra");
+
 
 
         

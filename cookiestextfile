@@ -1,0 +1,41 @@
+Cookies
+Cookies are data, stored in small text files, on your computer.
+When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+Cookies were invented to solve the problem "how to remember information about the user":
+
+When a user visits a web page, his/her name can be stored in a cookie. Next time the user visits the page, the cookie "remembers" his/her name.
+
+Cookies are saved in name-value pairs like:
+Example :username = John Doe
+
+Type of Cookies
+Session Cookies => cookies that are set without the expire/max-age field are called 
+Session cookies . it is destroy when the userr quits the browser.
+
+Persistent Cookies => the browser keep it up until their expiration date is reached.
+
+Read a Cookie
+Example:
+var x = document.cookie;
+
+Create a Cookie
+Example:
+document.cookie = "username=John Doe";
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+
+Change a Cookie
+we can change cookies same as we Create
+Example:
+document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+
+Delete a Cookie
+:=if we want to delete a cookies from the server you need to set past date and max-age 
+equals to a negative value
+Example:
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+Update a cookies
+we can update a cookies but tha name,domain of the cookies must be same 
+Example:
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+document.cookie = "username=John Doe; expires=Thu, 20 Dec 2013 12:00:00 UTC; path=/";

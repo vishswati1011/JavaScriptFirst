@@ -15,6 +15,17 @@
             add:"indore",
         };
         document.getElementById("p1").innerHTML="Admin "+person.fname+ " "+ person.lname+ " "+person.add;
+
+        //using new keyword
+
+        var address= new Object();
+        address.number=50;
+        address.street="betma";
+        address.city="indore";
+
+        document.getElementById("p2").innerHTML=" Address street no."+address.number+
+        "street "+address.street+" city "+address.city+"<br>";
+
     </script>
 </body>
 </html>

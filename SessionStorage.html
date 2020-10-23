@@ -23,7 +23,11 @@
         removeItem(key) : it remove the item in the storage object with the given key.<br>
     </p>
     <script>
-        sessionStorage.setItem("username","swati vishwakarma");
-    </script>
+       // sessionStorage.setItem("username","swati vishwakarma");
+       document.write(sessionStorage.getItem("username"));
+       sessionStorage.setItem("email","abc@gamil.com");
+       document.write("<br>"+ sessionStorage.key(1));
+       
+           </script>
 </body>
 </html>

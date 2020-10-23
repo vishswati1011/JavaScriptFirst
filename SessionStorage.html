@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SessionStorage</h1>
+    <p>The sessionStorage is a read only property of window onject.
+        it stores data in a web browser specifically to the domain
+        and protocol for a particular session. it doesn't get sent to the serve.
+        Data stored in sessionStorage gets cleared when the page session ends. 
+        A page session lasts for as long as the browser is open and survies
+        over page reloads and restores.
+    </p>
+    <h2>
+        Methods
+    </h2>
+    <p>setItem(key,value) : it allows to add a key/value pair to the storage object<br>
+        getItem(key): it returns the value of the item that is set with the given key.<br>
+        key(n) : it return the key of the item in the storage object at the nth index which can be useful for looping.<br>
+        removeItem(key) : it remove the item in the storage object with the given key.<br>
+    </p>
+    <script>
+        sessionStorage.setItem("username","swati vishwakarma");
+    </script>
+</body>
+</html>

@@ -24,10 +24,13 @@
     </p>
     <script>
        // sessionStorage.setItem("username","swati vishwakarma");
-       document.write(sessionStorage.getItem("username"));
-       sessionStorage.setItem("email","abc@gamil.com");
-       document.write("<br>"+ sessionStorage.key(1));
-       
+      // document.write(sessionStorage.getItem("username"));
+      // sessionStorage.setItem("email","abc@gamil.com");
+      //document.write("<br>"+ sessionStorage.key(1));
+        document.write(sessionStorage.length);
+        sessionStorage.removeItem("email");
+        //clear method is used to clear key value form sessionstorege
+        sessionStorage.clear();
            </script>
 </body>
 </html>
